@@ -1,0 +1,11 @@
+
+# Ignore raw & heavy data files
+data/online+retail+ii/
+*.xlsx
+*.csv
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Keep processed folder structure
+!.gitkeep
