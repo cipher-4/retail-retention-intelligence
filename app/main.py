@@ -34,7 +34,7 @@ st.markdown("""
 # Data loading with caching for instant rendering
 @st.cache_data
 def load_all_data():
-    base_dir = r"d:\data_proj\data\processed"
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "processed"))
     rfm = pd.read_parquet(os.path.join(base_dir, "rfm_customers.parquet"))
     churn = pd.read_parquet(os.path.join(base_dir, "churn_features.parquet"))
     preds = pd.read_parquet(os.path.join(base_dir, "churn_predictions.parquet"))
@@ -44,7 +44,8 @@ def load_all_data():
 
 @st.cache_resource
 def load_churn_model():
-    model_path = r"d:\data_proj\data\processed\xgb_churn_model.json"
+    base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "processed"))
+    model_path = os.path.join(base_dir, "xgb_churn_model.json")
     model = XGBClassifier()
     model.load_model(model_path)
     return model

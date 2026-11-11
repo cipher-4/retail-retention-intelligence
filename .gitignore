@@ -1,11 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-# Ignore raw & heavy data files
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual Environments
+venv/
+env/
+ENV/
+
+# Large Datasets & Storage (keep GitHub lean)
 data/online+retail+ii/
 *.xlsx
 *.csv
-.ipynb_checkpoints/
-__pycache__/
-*.pyc
+*.parquet
 
-# Keep processed folder structure
+# Retain directory structure on GitHub
 !.gitkeep
