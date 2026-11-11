@@ -161,7 +161,7 @@ retail-retention-intelligence/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/retail-retention-intelligence.git
+git clone https://github.com/cipher-4/retail-retention-intelligence.git
 cd retail-retention-intelligence
 ```
 
@@ -181,18 +181,6 @@ pip install -r requirements.txt
 streamlit run app/main.py
 ```
 The application will launch automatically at `http://localhost:8501`.
-
----
-
-## 💼 Resume Bullet Points
-
-Feel free to adapt these bullet points for your data science resume:
-
-> * **Retail Retention Intelligence | Lead Data Scientist**  
-> * Engineered an end-to-end customer retention & churn prediction platform on **1M+ e-commerce transactions**, developing a robust columnar storage pipeline using Parquet and Pandas.  
-> * Formulated a leakage-free 90-day time-split and engineered 12 behavioral velocity and spend-variance features, training an **XGBoost classifier that achieved an ROC-AUC of 0.8301 and 81% churn recall**.  
-> * Segmented 5,800+ accounts into a 10-tier RFM framework, identifying that **Champions account for 69% of revenue** and isolating **£350K+ in at-risk high-value revenue** for proactive retention marketing.  
-> * Deployed an interactive 5-module **Streamlit web application** featuring 3D cluster visualizations, dynamic churn threshold sliders, and real-time inference simulators.
 
 ---
 
